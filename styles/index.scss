@@ -1,0 +1,55 @@
+//Colors
+$White: hsl(0, 0%, 100%);
+$LightGray: hsl(212, 45%, 89%);
+$GrayishBlue: hsl(220, 15%, 55%);
+$DarkBlue: hsl(218, 44%, 22%);
+
+//Media Queries
+$desktop: (min-width: 1440px);
+$mobile: (min-width: 375px);
+
+$sizeTile: 20px;
+$sizeParaf: 15px;
+
+//Centrado
+body{
+    background-color: $LightGray;
+    text-align: -webkit-center;
+    padding-top: 100px;
+}
+.card {
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    justify-items: center;
+    width: 300px;
+    box-shadow: 2px 15px 1px 1px #{$GrayishBlue}50;
+    border-radius: 10px;
+    padding: 15px 10px 15px 10px;
+    background-color: $White;
+}
+
+#imgQr {
+    width: 100%;
+    box-shadow: 1px 1px 1px 1px #{$GrayishBlue}80;
+    border-radius: 10px;
+}
+
+.containerText {
+    width: 80%;
+    // margin-top: 10px;
+}
+
+.title {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: $sizeTile;
+    color: $DarkBlue;
+    text-align: center;
+}
+.subTitle {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    font-size: $sizeParaf;
+    color: $GrayishBlue;
+    text-align: center;
+}
